@@ -36,11 +36,5 @@ public class TestDemo {
         System.out.println(answer2);
         System.out.println(answer3);
     }
-    @Autowired
-    private ApplicationContext context;
 
-    @Test
-    void checkBeanName() {
-        System.out.println(context.containsBean("ollamaChatModel"));  // 应该打印 true
-    }
 }

@@ -22,7 +22,7 @@ public class MongoChatMemoryStore implements ChatMemoryStore {
     private MongoTemplate mongoTemplate;
     @Override
     public List<ChatMessage> getMessages(Object memoryId) {
-        Criteria criteria = Criteria.where("memory").is(memoryId);
+        Criteria criteria = Criteria.where("memoryId").is(memoryId);
         Query query = new Query(criteria);
         ChatMessages chatMessages = mongoTemplate.findOne(query, ChatMessages.class);
         if(chatMessages == null) return new LinkedList<>();

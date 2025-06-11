@@ -22,7 +22,7 @@ public class MongoCrudTest {
     }
     @Test
     public void testUpdate(){
-        Criteria criteria = Criteria.where("_id").is("68494bd41dc9ab349a25b15f");
+        Criteria criteria = Criteria.where("_id").is("68498736cd26e10bb1d58746");
         Query query = new Query(criteria);
         Update update = new Update();
         update.set("content", "新的聊天记录");
