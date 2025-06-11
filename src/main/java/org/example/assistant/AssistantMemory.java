@@ -8,7 +8,7 @@ import static dev.langchain4j.service.spring.AiServiceWiringMode.EXPLICIT;
 @AiService(
         wiringMode = EXPLICIT,
         chatModel = "ollamaChatModel",
-        chatMemory = "chatMemory"
+        chatMemoryProvider = "chatMemoryProvider"
 )
 public interface AssistantMemory {
     String chat(String msg);

@@ -28,9 +28,11 @@ public class TestDemo {
     private AssistantSeparate assistantSeparate;
     @Test
     public void testSeparate(){
-        String answer = assistantSeparate.chat(1, "我是张三");
+        //String answer = assistantSeparate.chat(1, "我是张三");
+        String answer = assistantSeparate.chat(1, "我叫张三");
         String answer2 = assistantSeparate.chat(1, "我是谁");
         String answer3 = assistantSeparate.chat(2, "我叫什么");
+        System.out.println(answer);
         System.out.println(answer2);
         System.out.println(answer3);
     }
